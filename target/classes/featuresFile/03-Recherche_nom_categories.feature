@@ -10,7 +10,7 @@ Feature: Recherche catégorie produit
     Then Je me redirige vers la page home
 
   @categoriesname
-  Scenario: Je souhaite chercher le nom du produit
+  Scenario: Je souhaite chercher la catégorie  du produit
     
     When Je clique sur Catalog
     And Je clique sur Categories

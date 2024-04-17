@@ -10,37 +10,41 @@ import com.e2eTests.automation.utils.Setup;
 public class ProductNamePage extends BasePage {
 
 	/* Retrieve element */
+
 	@FindBy(how = How.XPATH, using = "//p[normalize-space()='Catalog']")
-	private static WebElement menuCatalog;
-
-	@FindBy(how = How.XPATH, using = " //p[normalize-space()='Products']")
+	private static WebElement menuCatalog ;
+	
+	@FindBy(how = How.XPATH, using = "//p[normalize-space()='Products']")
 	private static WebElement btnProduct;
-
+	
+	
 	@FindBy(how = How.ID, using = "SearchProductName")
 	private static WebElement productName;
 	
 	@FindBy(how = How.ID, using = "search-products")
-	private static WebElement search;
+	private static WebElement Search;
+	
 	
 	public ProductNamePage() {
 		super(Setup.getDriver());
 	}
-
+	
 	public static WebElement getMenuCatalog() {
 		return menuCatalog;
 	}
-
+	
 	public static WebElement getBtnProduct() {
 		return btnProduct;
 	}
 
 	public static WebElement getProductName() {
 		return productName;
+	}
+		public static WebElement getSearch() {
+			return Search;
 		
 	}
 
-	public static WebElement getSearch() {
-		return search;
-	}
-	}
+}
+	
 

@@ -7,10 +7,11 @@ Feature: Recherche catégorie produit
     When Je saisis l'adresse mail "admin@yourstore.com"
     And Je saisis le login "admin"
     And Je clique sur le bouton Login
+    Then Je me redirige vers la page home
 
   @categoriesname
-  Scenario: Je souhaite chercher le nom du produit
-    Then Je me redirige vers la page home
+  Scenario: Je souhaite chercher la catégorie  du produit
+    
     When Je clique sur Catalog
     And Je clique sur Categories
     And Je saisis le nom du catégorie "book"
