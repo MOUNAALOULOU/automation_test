@@ -22,9 +22,10 @@ public class LoginStepDefinition {
 
 	/* login valid */
 	@Given("Je visite l'application NopCommerce")
-	public void jeVisiteLApplicationNopCommerce() {
+	public void jeVisiteLApplicationNopCommerce() throws InterruptedException {
 		
 		seleniumUtils.get(configFileReader.getProperties("home.url"));
+		Thread.sleep(3000);
 	}
  
 	@When("Je saisis l'adresse mail {string}")
